@@ -357,7 +357,7 @@ var React360Viewer = /*#__PURE__*/function (_Component) {
       for (var i = 1; i <= this.props.amount; i++) {
         var imageIndex = this.props.paddingIndex ? this.lpad(i, "0", 2) : i;
         var fileName = this.props.fileName.replace('{index}', imageIndex);
-        var filePath = "".concat(this.props.imagePath, "/").concat(fileName);
+        var filePath = "".concat(this.props.imagePath).concat(fileName);
         this.imageData.push(filePath);
       }
 
